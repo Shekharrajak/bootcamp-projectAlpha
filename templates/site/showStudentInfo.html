@@ -1,0 +1,21 @@
+{%extends "layout/index.html"%}
+{%block content%}
+<table class="table table-boredered table-hover table-responsive">
+	<thead>
+		<th>Name</th>
+		<th>Rno</th>
+		<th>Branch</th>
+		<th>Email</th>
+	</thead>
+	<tbody>
+	
+	<tr>
+		<td>{{member.name }}</td>
+		<td>{{member.rno }}</td>
+		<td>{{member.branch}}</td>
+		<td>{{member.email}}</td>
+	</tr>
+	
+	</tbody>
+</table>
+{%endblock%}

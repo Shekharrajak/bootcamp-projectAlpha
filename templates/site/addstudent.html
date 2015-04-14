@@ -1,0 +1,43 @@
+{%extends "layout/index.html"%}
+{%block content%}
+<div class="container">
+<legend style="text-align:center;">Add student</legend>
+<form action="/register/" method="POST" class="form-horizontal">
+		{%csrf_token%}
+		<div class="form-group">
+			<div class="col-md-5">
+				<label class="control-label">Student name</label>
+				<input type="text" class="form-control input-md" name="sname">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-5">
+				<label class="control-label">Roll number</label>
+				<input type="text" class="form-control input-md" name="rno">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-5">
+				<label class="control-label">Branch</label>
+				<input type="text" class="form-control input-md" name="branch">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-5">
+				<label class="control-label">Email</label>
+				<input type="text" class="form-control input-md" name="email">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-5">
+				<button class="btn btn-success btn-md" type="submit">Submit</button>
+			</div>
+		</div>
+
+</form>
+</div>
+{%endblock%}
