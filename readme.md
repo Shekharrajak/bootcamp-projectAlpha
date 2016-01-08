@@ -3,6 +3,8 @@
 *Requirements*
 - pip
 - virtualenv
+- python > 2.7
+- Editor Nano/VI/Sublime-text/Atom/Notepad++
 
 _Steps_
 
